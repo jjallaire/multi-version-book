@@ -10,7 +10,7 @@ Execute the  `./configure` script to switch between configurations:
 ```bash
 # work with the 'base' book
 ./configure base
-quarto render
+quarto preview
 
 # work with the 'pro' book
 ./configure pro
@@ -41,9 +41,8 @@ The `.configure` script simply copies these files over `config/config.yml`.
 > **IMPORTANT NOTE:** Because configuration changes are made by copying the
 `-base` and `-pro` files over the `config.yml` file, you need to re-run
 the `.configure` script whenever you edit these files. So for example:
-
-1. Save changes to `config-base.yml`
-2. Run `./configure base` to copy changes over to `config.yml`
+> 1. Save changes to `config-base.yml`
+> 2. Run `./configure base` to copy changes over to `config.yml`
 
 ## Pro-Only Content
 
