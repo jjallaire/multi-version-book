@@ -1,0 +1,9 @@
+book:
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basics.qmd
+    
+filters:
+  - pro-only.lua
+

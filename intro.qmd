@@ -1,5 +1,14 @@
 # Introduction
 
-This is a book created from markdown and executable code.
+## Section
 
-See @knuth84 for additional discussion of literate programming.
+This is a section. [This is a sentence only for Pro]{.pro-only}
+
+::: {.pro-only}
+## Another Section
+
+This section only shows up in the Pro version.
+
+:::
+
+

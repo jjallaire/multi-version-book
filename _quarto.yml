@@ -3,15 +3,8 @@ project:
 
 book:
   title: "multi-version-book"
-  author: "Jane Doe"
+  author: "Norah Jones"
   date: "8/13/2022"
-  chapters:
-    - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
 
 format:
   html:
@@ -19,5 +12,6 @@ format:
   pdf:
     documentclass: scrreprt
 
-
+metadata-files: 
+  - config/config.yml
 

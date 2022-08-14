@@ -1,0 +1,11 @@
+project:
+  output-dir: _book-pro
+
+book:
+  title: "multi-version-book (pro)"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basics.qmd
+    - advanced.qmd
+  

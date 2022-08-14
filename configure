@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "base" ]; then
+  cp config/config-base.yml config/config.yml
+elif [ "$1" == "pro" ]; then
+  cp config/config-pro.yml config/config.yml
+fi
