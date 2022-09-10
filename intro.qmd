@@ -2,9 +2,9 @@
 
 ## Section
 
-This is a section. [This is a sentence only for Pro]{.pro-only}
+This is a section. [This is a sentence only for Pro]{when-profile="pro"}
 
-::: {.pro-only}
+::: {when-profile="pro"}
 ## Another Section
 
 This section only shows up in the Pro version.

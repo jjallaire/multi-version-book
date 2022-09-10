@@ -2,7 +2,6 @@ project:
   type: book
 
 book:
-  title: "multi-version-book"
   author: "Norah Jones"
   date: "8/13/2022"
 
@@ -12,6 +11,12 @@ format:
   pdf:
     documentclass: scrreprt
 
-metadata-files: 
-  - config/config.yml
+profile:
+  default: pro
+  group: [pro, base]
+  config:
+    pro: config/pro.yml
+    base: config/base.yml
+  
+quarto-required: 1.2.89
 
