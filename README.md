@@ -47,6 +47,7 @@ This results in each version of the book including its own list of chapters, and
 - `_book` for the base version
 - `_book-pro` for the pro version
 
+
 ## Pro-Only Content
 
 There are two ways to create pro-only content:
@@ -97,6 +98,21 @@ quarto render --profile base
 ```
 
 The book content will be written to the `_book` and `_book-pro` directories.
+
+
+## Profile Group
+
+
+Note that the `group` field of `profile` indicates that one of the profiles in the group must always be defined in order for the project to be successfully rendered:
+
+```yaml
+profile:
+  group: [pro, base]
+```
+
+This is important to specify because if an external caller defines `QUARTO_PROFILE` (e.g. RStudio Connect might automatically set it to `connect`) you want to make sure that at least one of your required profiles is automatically included in the list of profiles. In that case the first profile in the list (here `pro`) will be activated.
+
+More typically though if you are rendering on a remote server you'll arrange to have `QUARTO_PROFILE` defined as you need it to be. The `group` specification is really a failsafe to make sure the project can always render.
 
 
 
