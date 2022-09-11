@@ -26,22 +26,34 @@ The default profile when none is specified is `pro` (you can change using the `p
 
 ## Configuration
 
-Here is the complete `profile` section of `_quarto.yml` that defines the two profiles:
+Here are the profile specific configuraiton files:
+
+**_quarto.base.yml**
 
 ```yaml
-profile:
-  default: pro
-  group: [pro, base]
-  config:
-    pro: config/pro.yml
-    base: config/base.yml
+book:
+  title: "multi-version"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basics.qmd
 ```
 
-Profile specific configuration is included in the following two files
+**_quarto.pro.yml**
 
-- `config/base.yml`
-- `config/pro.yml`
+```yaml
+project:
+  output-dir: _book-pro
 
+book:
+  title: "multi-version-book (pro)"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basics.qmd
+    - advanced.qmd
+``` 
+  
 This results in each version of the book including its own list of chapters, and in book output being written into two different directories:
 
 - `_book` for the base version
@@ -101,7 +113,6 @@ The book content will be written to the `_book` and `_book-pro` directories.
 
 
 ## Profile Group
-
 
 Note that the `group` field of `profile` indicates that one of the profiles in the group must always be defined in order for the project to be successfully rendered:
 

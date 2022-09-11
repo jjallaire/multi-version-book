@@ -12,11 +12,8 @@ format:
     documentclass: scrreprt
 
 profile:
-  default: pro
+  default: base
   group: [pro, base]
-  config:
-    pro: config/pro.yml
-    base: config/base.yml
   
-quarto-required: 1.2.89
+quarto-required: 1.2.92
 

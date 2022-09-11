@@ -1,5 +1,5 @@
 book:
-  title: "multi-version-book"
+  title: "multi-version"
   chapters:
     - index.qmd
     - intro.qmd
