@@ -12,8 +12,7 @@ format:
     documentclass: scrreprt
 
 profile:
-  default: base
   group: [pro, base]
   
-quarto-required: 1.2.92
+quarto-required: 1.2.94
 
